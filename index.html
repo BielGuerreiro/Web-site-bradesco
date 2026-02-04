@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -39,5 +40,59 @@
         <a href=""><i class="bx bx-accessibility">Acessibilidade</i></a>
       </div>
     </header>
+
+    <main class="home-page">
+      <div class="banners">
+        <img src="img/banner1.jpg" alt="banner" class="ativo" />
+        <img src="img/banner2.jpg" alt="banner" />
+        <img src="img/banner3.webp" alt="banner" />
+        <img src="img/banner4.webp" alt="banner" />
+        <img src="img/banner5.png" alt="banner" />
+      </div>
+
+      <div class="bolinhas">
+        <div class="btn-bolinha ativo" onclick="mudarSlide(0)">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+
+        <div class="btn-bolinha" onclick="mudarSlide(1)">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+
+        <div class="btn-bolinha" onclick="mudarSlide(2)">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+
+        <div class="btn-bolinha" onclick="mudarSlide(3)">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+
+        <div class="btn-bolinha" onclick="mudarSlide(4)">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+      </div>
+
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+
+      <div class="opcoes">
+        <div class="outros">
+          <p>Outros</p>
+          <h2>Perfis <i class="bx bx-chevron-down"></i></h2>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

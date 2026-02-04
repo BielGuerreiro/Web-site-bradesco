@@ -4,10 +4,12 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 :root {
   --cor-linha: rgba(46, 46, 46, 0.4);
+  --main-color: #cc092f;
 }
 
 body {
@@ -16,6 +18,8 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 6%;
   background: linear-gradient(135deg, #ff0000 0%, #240000 100%);
@@ -73,10 +77,142 @@ header {
   gap: 10px;
   color: white;
   white-space: nowrap;
+  font-size: 1.1rem;
 }
 
 .bxs-chevron-right {
   padding: 2%;
   border: 1px solid white;
   border-radius: 50%;
+  font-size: 12px;
+}
+
+/* home page _+________________________________________________________________________________________________ */
+.home-page {
+  position: relative;
+  margin-top: 58px;
+  width: 100%;
+  height: 90vh;
+}
+
+.banners {
+  width: 100%;
+  height: 100%;
+}
+
+.banners img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.banners img.ativo {
+  display: block;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* indicadores ____________________________________ */
+.bolinhas {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.btn-bolinha {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.btn-bolinha:hover {
+  transform: scale(1.1);
+}
+
+.btn-bolinha svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  display: none;
+}
+
+.btn-bolinha circle {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-dasharray: 113;
+  stroke-dashoffset: 113;
+  stroke-linecap: round;
+}
+
+.btn-bolinha.ativo {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-bolinha.ativo svg {
+  display: block;
+}
+
+.btn-bolinha.ativo circle {
+  animation: tempoCirculo 5s linear forwards;
+}
+
+@keyframes tempoCirculo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+.logo img {
+  width: 20%;
+  height: auto;
+}
+
+.opcoes {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.outros p {
+  font-size: 1rem;
+  color: white;
+}
+
+.outros h2 {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
 }
