@@ -16,6 +16,11 @@
 body {
   background-color: rgb(255, 255, 255);
   height: 600vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -24,7 +29,7 @@ header {
   left: 0;
   width: 100%;
   height: 6%;
-  background: linear-gradient(135deg, #ff0000 0%, #240000 100%);
+  background: linear-gradient(135deg, #ff0000 0%, #580016 100%);
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -219,10 +224,12 @@ header {
 }
 
 .card-acesso h3 {
-  color: #cc092f;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: bold;
+  background: var(--color-bradesco);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .campo-grupo {
@@ -233,7 +240,7 @@ header {
 
 .campo-grupo label {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--secundary-color);
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -276,7 +283,7 @@ header {
   gap: 8px;
   margin-bottom: 20px;
   font-size: 0.85rem;
-  color: #555;
+  color: var(--secundary-color);
   cursor: pointer;
 }
 
@@ -300,6 +307,8 @@ header {
 
 .btn-acessar:hover {
   background: #990020;
+  border: 1px solid black;
+  transition: 0.4s;
 }
 
 .opcoes {
@@ -333,7 +342,7 @@ header {
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 5px 15px;
-  max-width: 130px;
+  max-width: 160px;
   transition: 0.3s;
 }
 
@@ -344,7 +353,7 @@ header {
   flex: 1;
   width: 100%;
   font-size: 1rem;
-  color: #333;
+  color: var(--secundary-color);
 }
 
 .barra-pesquisa button {
@@ -437,6 +446,7 @@ header {
 .pagina2 {
   position: relative;
   height: 72vh;
+  z-index: 2;
 }
 
 .img-app img {
@@ -447,7 +457,6 @@ header {
 
 .img-app {
   margin-top: 100px;
-  z-index: 2;
 }
 
 .titulo-app {
@@ -496,10 +505,65 @@ header {
 }
 
 /* pagina 3 _________________________________________________________ */
-.fundo-pagina3 img {
-  margin-top: -150px;
+
+.pagina3 {
   position: relative;
+  z-index: 1;
+}
+
+.fundo-pagina3 img {
   width: 100%;
   height: 100vh;
-  z-index: -1;
+}
+
+.caixas-atalho {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  top: 30%;
+  width: 70%;
+  max-width: 1000px;
+}
+
+.atalhos ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-atalho {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-atalho:hover {
+  background: var(--color-bradesco);
+}
+
+.atalhos img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.atalhos h1 {
+  font-size: 1.2rem;
+  color: var(--secundary-color);
+  transition: 0.3s;
+}
+
+.card-atalho:hover h1 {
+  color: white;
 }
