@@ -9,11 +9,13 @@
 
 :root {
   --cor-linha: rgba(46, 46, 46, 0.4);
-  --main-color: #cc092f;
+  --color-bradesco: linear-gradient(135deg, #e60023 0%, #800040 100%);
+  --secundary-color: #0000008a;
 }
 
 body {
   background-color: rgb(37, 37, 37);
+  height: 600vh;
 }
 
 header {
@@ -35,6 +37,7 @@ header {
   gap: 10px;
   color: white;
   font-size: 1.1rem;
+  font-weight: 900;
 }
 
 .linha,
@@ -52,23 +55,27 @@ header {
 .menu li a {
   color: white;
   font-size: 1.1rem;
+  font-weight: 900;
   cursor: pointer;
 }
 
 .acessibilidade {
   margin-left: auto;
+  background-color: rgba(255, 0, 0, 0.137);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.acessibilidade i {
   display: flex;
+  gap: 10px;
   align-items: center;
 }
 
 .acessibilidade a {
-  display: flex;
-  gap: 10px;
-  padding: 12px;
-  background-color: rgba(255, 0, 0, 0.137);
   color: white;
-  font-size: 1.1rem;
-  border-radius: 4px;
+  font-size: 1.3rem;
+  font-weight: 900;
 }
 
 .acesso a {
@@ -78,6 +85,7 @@ header {
   color: white;
   white-space: nowrap;
   font-size: 1.1rem;
+  font-weight: 900;
 }
 
 .bxs-chevron-right {
@@ -90,9 +98,9 @@ header {
 /* home page _+________________________________________________________________________________________________ */
 .home-page {
   position: relative;
-  margin-top: 58px;
+  margin-top: 56px;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 
 .banners {
@@ -197,22 +205,218 @@ header {
   height: auto;
 }
 
-.opcoes {
+.card-acesso {
   position: absolute;
-  right: 10%;
-  top: 5%;
+  top: 38%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.outros p {
+.card-acesso h3 {
+  color: #cc092f;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.campo-grupo label {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo-grupo input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: #f9f9f9;
+}
+
+.campo-grupo input:focus {
+  border-color: #cc092f;
+  background-color: white;
+}
+
+.linha-conta {
+  display: flex;
+  gap: 10px;
+}
+
+.conta {
+  flex: 1;
+}
+
+.digito {
+  width: 50px;
+}
+
+.digito input {
+  text-align: center;
+}
+
+.lembrar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.lembrar input {
+  cursor: pointer;
+  accent-color: #cc092f;
+}
+
+.btn-acessar {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #cc092f, #990020);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-acessar:hover {
+  background: #990020;
+}
+
+.opcoes {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: flex;
+  gap: 10px;
+}
+
+.outros p,
+.empresa {
   font-size: 1rem;
   color: white;
 }
 
-.outros h2 {
+.outros h2,
+.empresa h2 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: flex;
   gap: 5px;
   align-items: center;
   justify-items: center;
+}
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px;
+  max-width: 130px;
+  transition: 0.3s;
+}
+
+.barra-pesquisa input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+}
+
+.barra-pesquisa button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #cc092f;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.barra-pesquisa input::placeholder {
+  background: var(--color-bradesco);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.barra-pesquisa:focus-within {
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+/* pagina 2 ___________________________________________________________ */
+
+.pagina2 {
+  width: 100%;
+  height: 30vh;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.container-box {
+  position: absolute;
+  left: 10%;
+  top: -50px;
+  width: 90%;
+}
+
+.boxes {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 180px;
+  height: 250px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: var(--secundary-color);
 }
