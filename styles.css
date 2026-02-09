@@ -567,3 +567,72 @@ header {
 .card-atalho:hover h1 {
   color: white;
 }
+
+/* pagina 4 ________________________________________________________________________________ */
+.pagina4 {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cabecalho-seguranca h2 {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  max-width: 1500px;
+  background: var(--color-bradesco, #cc092f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.cabecalho-seguranca p {
+  color: var(--secundary-color);
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.cards-seguranca {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-seguranca {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.item-seguranca:hover {
+  transform: translateY(-10px);
+  border-bottom-color: #cc092f;
+}
+
+.item-seguranca i {
+  font-size: 3.5rem;
+  color: #cc092f;
+  margin-bottom: 20px;
+}
+
+.item-seguranca h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+}
+
+.item-seguranca p {
+  font-size: 0.95rem;
+  color: var(--secundary-color);
+  line-height: 1.5;
+}
