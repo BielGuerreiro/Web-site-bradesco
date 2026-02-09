@@ -22,11 +22,10 @@
 
       <nav class="menu">
         <ul>
-          <li><a href="">menu</a></li>
-          <li><a href="#app">Aplicativo </a></li>
-          <li><a href="">area2</a></li>
-          <li><a href="">area3</a></li>
-          <li><a href="">area4</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#app">Aplicativo</a></li>
+          <li><a href="#atalho">Produtos E Serviços</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
         </ul>
       </nav>
 
@@ -41,7 +40,7 @@
       </div>
     </header>
 
-    <main class="home-page">
+    <main class="home-page" id="home">
       <div class="banners">
         <img src="img/banner1.jpg" alt="banner" class="ativo" />
         <img src="img/banner2.jpg" alt="banner" />
@@ -219,12 +218,16 @@
       </div>
     </section>
 
-    <section class="pagina3">
+    <section class="pagina3" id="atalho">
       <div class="fundo-pagina3">
         <img
           src="https://i.pinimg.com/736x/39/4d/71/394d710d8d1e2715cbafd738a0970bf3.jpg"
           alt=""
         />
+      </div>
+
+      <div class="titulo-atalho">
+        <h1>Produtos e serviços pra agilizar seu dia a dia</h1>
       </div>
 
       <div class="caixas-atalho">
@@ -292,7 +295,7 @@
       </div>
     </section>
 
-    <section class="pagina4">
+    <section class="pagina4" id="seguranca">
       <div class="container-seguranca">
         <div class="cabecalho-seguranca">
           <h2>Sua segurança em primeiro lugar</h2>
@@ -331,54 +334,109 @@
     </section>
 
     <footer>
-      <div class="contatos">
-        <ul>
-          <li>
-            <p>SAC Alô Bradesco</p>
-            <a href=""><h1>0800 704 8383</h1></a>
-          </li>
+      <div class="container-footer">
+        <div class="footer-top">
+          <div class="info-telefones">
+            <ul class="lista-telefones">
+              <li>
+                <p>SAC Alô Bradesco</p>
+                <a href="#"><h1>0800 704 8383</h1></a>
+              </li>
+              <li>
+                <p>Ouvidoria</p>
+                <a href="#"><h1>0800 727 9933</h1></a>
+              </li>
+            </ul>
+          </div>
 
-          <li>
-            <p>Ouvidoria</p>
-            <a href=""><h1>0800 727 9933</h1></a>
-          </li>
+          <div class="social-area">
+            <p class="whats-label">Fale com a Bradesco pelo WhatsApp:</p>
+            <ul class="lista-social">
+              <li>
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
 
-          <li>
-            <p class="whats">Fale Com a Bradesco Pelo WhatsApp:</p>
-          </li>
-        </ul>
+          <div class="logo-footer">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Banco_Bradesco_logo_%28horizontal%29.png"
+              alt="Logo Bradesco"
+            />
+          </div>
+        </div>
 
-        <div class="icones">
-          <ul>
-            <li>
-              <a href=""><i class="bx bxl-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="bx bxl-youtube"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="bx bxl-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="bx bxl-linkedin"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="bx bxl-instagram"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="bx bxl-tiktok"></i></a>
-            </li>
+        <div class="linha-separadora"></div>
+
+        <div class="footer-bottom">
+          <div class="legal-wrapper">
+            <div class="texto-legal">
+              <p>Banco Bradesco SA | CNPJ: 60.746.948.0001-12</p>
+              <p>
+                Cidade de Deus, s/nº Vila Yara | Osasco | SP | CEP: 06029-900
+              </p>
+            </div>
+
+            <div class="aviso-dev">
+              <div class="aviso-conteudo">
+                <i class="bx bx-code-alt"></i>
+                <div>
+                  <p>
+                    <strong
+                      >Projeto Educacional • Desenvolvido por
+                      BielGuerreiro</strong
+                    >
+                  </p>
+                  <p class="aviso-detalhe">
+                    Clone visual para fins de estudo e portfólio. Sem vínculo
+                    oficial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="links-institucionais">
+            <li><a href="#">Bradesco Imprensa</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Segurança</a></li>
+            <li><a href="#">Integridade</a></li>
+            <li><a href="#">Relação com Investidores</a></li>
+            <li><a href="#">Sustentabilidade</a></li>
+            <li><a href="#">Preferência Cookies</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="logo2">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Banco_Bradesco_logo_%28horizontal%29.png"
-          alt=""
-        />
-      </div>
     </footer>
+
+    <div class="aviso-legal-fixo">
+      <div class="conteudo-aviso">
+        <p>
+          © 2026 Bradesco Clone. Projeto desenvolvido por
+          <span class="destaque-nome">BielGuerreiro</span>.
+        </p>
+        <p class="aviso-pequeno">
+          Este site é um projeto puramente educacional para fins de estudo de
+          programação. Não possui fins lucrativos e não tem afiliação oficial
+          com o Banco Bradesco S.A.
+        </p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
