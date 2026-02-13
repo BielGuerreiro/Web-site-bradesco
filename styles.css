@@ -934,7 +934,7 @@ footer {
 
   /* home page _+________________________________________________________________________________________________ */
   .home-page {
-    margin-top: 50px;
+    margin-top: 45px;
     height: 50vh;
   }
 
@@ -961,7 +961,7 @@ footer {
     top: 85%;
     left: 2%;
     width: 230px;
-    height: 280px;
+    height: 70%;
   }
 
   .card-acesso h3 {
@@ -1103,7 +1103,7 @@ footer {
 
   .titulo-atalho {
     position: absolute;
-    left: 4%;
+    left: 2%;
     top: 10%;
   }
 
@@ -1121,7 +1121,7 @@ footer {
 
   .card-atalho {
     width: 100%;
-    height: 150px;
+    height: 135px;
   }
 
   .atalhos img {
@@ -1130,6 +1130,10 @@ footer {
 
   .atalhos h1 {
     font-size: 1rem;
+  }
+
+  .cabecalho-seguranca h2 {
+    max-width: 400px;
   }
 
   .cabecalho-seguranca p {
