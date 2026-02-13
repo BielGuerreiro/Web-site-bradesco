@@ -13,6 +13,11 @@
   --secundary-color: #0000008a;
 }
 
+.logo-header,
+.menu-responsivo {
+  display: none;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   height: auto;
@@ -891,4 +896,318 @@ footer {
   font-size: 0.75rem;
   color: #aaa;
   margin-top: 5px !important;
+}
+
+@media (max-width: 900px) {
+  .cadastro,
+  .linha,
+  .menu,
+  .linha2,
+  .acesso,
+  .acessibilidade,
+  .logo {
+    display: none;
+  }
+
+  .logo-header {
+    display: block;
+  }
+
+  .logo-header img {
+    height: 30px;
+    width: auto;
+    display: block;
+  }
+
+  .menu-responsivo {
+    display: block;
+    position: absolute;
+    right: 8%;
+  }
+
+  .menu-responsivo i {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+  }
+
+  /* home page _+________________________________________________________________________________________________ */
+  .home-page {
+    margin-top: 50px;
+    height: 50vh;
+  }
+
+  .banners {
+    height: 70%;
+  }
+
+  .banners img {
+    height: 80%;
+  }
+
+  /* indicadores ____________________________________ */
+  .bolinhas {
+    bottom: 220px;
+  }
+
+  .btn-bolinha {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.534);
+  }
+
+  .card-acesso {
+    top: 85%;
+    left: 2%;
+    width: 230px;
+    height: 280px;
+  }
+
+  .card-acesso h3 {
+    font-size: 1.3rem;
+  }
+
+  .campo-grupo {
+    margin-bottom: 10px;
+    margin-left: -15px;
+  }
+
+  .campo-grupo label {
+    font-size: 0.8rem;
+  }
+
+  .campo-grupo input {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .linha-conta {
+    gap: 20px;
+  }
+
+  .barra-pesquisa {
+    border-radius: 9px;
+    padding: 5px 10px;
+    max-width: 120px;
+  }
+
+  .barra-pesquisa input::placeholder {
+    font-size: 1rem;
+  }
+
+  /* Boxes ___________________________________________________________ */
+  .pagina-cortada {
+    height: auto;
+    margin-top: 150px;
+    padding-bottom: 40px;
+  }
+
+  .container-box {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: calc(50% - 15px);
+    height: 200px;
+  }
+
+  .card img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .seguro {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pagina2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .img-app {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-app img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .titulo-app {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-app h1 {
+    font-size: 2.2rem;
+    margin: 0 auto 15px auto;
+    text-align: center;
+  }
+
+  .titulo-app p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .icones-app {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .icones-app img {
+    height: 48px;
+    margin: 0 auto;
+  }
+
+  /* pagina 3 _________________________________________________________ */
+
+  .fundo-pagina3 img {
+    width: 100%;
+    height: 145vh;
+  }
+
+  .titulo-atalho {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+  }
+
+  .titulo-atalho h1 {
+    font-size: 2.2rem;
+    max-width: 290px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .atalhos ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card-atalho {
+    width: 100%;
+    height: 150px;
+  }
+
+  .atalhos img {
+    width: 40px;
+  }
+
+  .atalhos h1 {
+    font-size: 1rem;
+  }
+
+  .cabecalho-seguranca p {
+    font-size: 1rem;
+    max-width: 390px;
+  }
+
+  .cards-seguranca {
+    max-width: 300px;
+  }
+
+  footer {
+    padding: 30px 0;
+    margin-bottom: 150px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .lista-telefones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-area {
+    order: 2;
+  }
+
+  .logo-footer {
+    order: 3;
+    margin-top: 10px;
+  }
+
+  .legal-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .aviso-dev {
+    order: 1;
+  }
+
+  .texto-legal {
+    order: 2;
+  }
+
+  .aviso-conteudo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links-institucionais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .links-institucionais li {
+    border: none;
+    padding: 0;
+  }
+
+  .links-institucionais a {
+    font-size: 0.9rem;
+  }
+
+  .links-institucionais li::after,
+  .links-institucionais li::before,
+  .lista-telefones li::after,
+  .lista-telefones li::before {
+    content: none !important;
+    display: none !important;
+  }
 }
