@@ -934,7 +934,7 @@ footer {
 
   /* home page _+________________________________________________________________________________________________ */
   .home-page {
-    margin-top: 45px;
+    margin-top: 43px;
     height: 50vh;
   }
 
@@ -961,11 +961,11 @@ footer {
     top: 85%;
     left: 2%;
     width: 230px;
-    height: 70%;
+    height: 320px;
   }
 
   .card-acesso h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .campo-grupo {
