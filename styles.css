@@ -934,8 +934,8 @@ footer {
 
   /* home page _+________________________________________________________________________________________________ */
   .home-page {
-    margin-top: 43px;
-    height: 50vh;
+    margin-top: 41px;
+    height: 55vh;
   }
 
   .banners {
@@ -948,7 +948,7 @@ footer {
 
   /* indicadores ____________________________________ */
   .bolinhas {
-    bottom: 220px;
+    bottom: 250px;
   }
 
   .btn-bolinha {
@@ -958,7 +958,7 @@ footer {
   }
 
   .card-acesso {
-    top: 85%;
+    top: 86%;
     left: 2%;
     width: 230px;
     height: 320px;
@@ -1116,7 +1116,11 @@ footer {
 
   .atalhos ul {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .caixas-atalho {
+    top: 26%;
   }
 
   .card-atalho {
